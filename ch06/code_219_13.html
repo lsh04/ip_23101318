@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+    .main{
+        
+        background-color: rgb(58, 58, 58);
+        width: 320px;
+        height: 150px;
+   
+    }
+    input {
+        background-color: white;
+        border-radius: 20px;
+        width: 200px;
+        position: fixed;
+        left: 100px;
+        border-style: none;
+    }
+    .submit_btn { 
+       width: 204px;
+       height: 18px;
+       padding: 0;
+    }
+    .hidden {
+        height: 5px;
+        width: 200px;
+    }
+    .input_text{
+        background-color: aqua;
+        
+    }
+    .form_1 {
+        width: 50px;
+        text-align: center;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+    .form_2 {
+        width: 50px;
+        text-align: center;
+        margin-left: 15px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="main">
+        <h1 style="padding: 5px 0px 0px 5px;">간단한 입력양식</h1>
+        <div>
+            <span class="form_1">아이디</span> <input type="text">
+            <br>
+            <div class="hidden"></div>
+            <span class="form_2">비밀번호</span> <input type="password">
+            <br>
+            <div class="hidden"></div>
+            <input type="submit" value="제출" class="submit_btn">
+        </div>
+        
+    </div>
+ 
+</body>
+</html>

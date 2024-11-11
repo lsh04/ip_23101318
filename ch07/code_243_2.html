@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div.container {
+        .container {
             width: 1080px;
             margin: 0 auto;
-            margin-bottom: 8px;
         }
-        div.left {
+        .left {
             float: left;
             width: 740px;
             height: 428px;
             background-color: red;
             margin-bottom: 8px;
         }
-        div.right {
+        .right {
             float: right;
             width: 332px;
             height: 428px;
@@ -45,7 +44,9 @@
         }
         .footer{
             background-color: yellow;
+            width: 1080px;
             height: 80px;
+            overflow: auto;
         }
     </style>
 </head>
@@ -53,6 +54,7 @@
         <div class="container">
             <h1>Logo</h1>
         </div>
+
         <div class="container">
             <ul class="gnb">
                 <li>메일</li>
@@ -69,13 +71,16 @@
                 <li>실시간 검색 순위</li>
             </ul>
         </div>
+
         <div class="container">
             <div class="left"></div>
             <div class="right"></div>
         </div> 
+
         <div class="container">
             <div class="left"></div>
             <div class="right"></div>
+            
         </div>
         <div class="container">
             <div class="footer"></div>

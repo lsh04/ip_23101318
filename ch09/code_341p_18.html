@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // 네 자리 정수를 분류하는 함수
+function splitNumber(number) {
+    if (number < 1000 || number > 9999) {
+        alert("네 자리 정수를 입력하세요.");
+        return;
+    }
+
+    const thousands = Math.floor(number / 1000); // 천 자리
+    const hundreds = Math.floor((number % 1000) / 100); // 백 자리
+    const tens = Math.floor((number % 100) / 10); // 십 자리
+    const ones = number % 10; // 일 자리
+
+    alert(`천 자리: ${thousands}`);
+    alert(`백 자리: ${hundreds}`);
+    alert(`십 자리: ${tens}`);
+    alert(`일 자리: ${ones}`);
+
+    console.log(`천 자리: ${thousands}`);
+    console.log(`백 자리: ${hundreds}`);
+    console.log(`십 자리: ${tens}`);
+    console.log(`일 자리: ${ones}`);
+}
+
+// 사용자 입력받기 (브라우저 환경)
+const userInput = prompt("네 자리 정수를 입력하세요:");
+const number = parseInt(userInput, 10);
+
+splitNumber(number);
+</script>
+<body>
+    
+</body>
+</html>

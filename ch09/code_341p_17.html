@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+
+        // let pi = 3.14;
+        // let h = 5;
+        // // function S(r) {
+        // //     return r*r*pi;
+
+        // // }
+        // function V(r) {
+        //     return S(r)*H(h);
+        //     function S(r) {
+        //        return r*r*pi;
+        //     }
+        //     function H(h) {
+        //         return h;
+        //     }
+            
+        // }
+
+        // alert(V(3));
+
+        function circle(radius, height) {
+            const pi = Math.PI;
+            const baseArea = radius*radius*pi;
+            const V = baseArea * height;
+            return V;
+        }
+
+        const radius = parseFloat(prompt("원기둥의 반지름을 입력하세요:"));
+        const height = parseFloat(prompt("원기둥의 높이를 입력하세요:"));
+
+        // 부피 계산
+
+        if (!isNaN(radius) && radius > 0 && !isNaN(height) && height > 0) // 값이 숫자이며, 0보다 커야한다.
+        {
+            const V = circle(radius, height);
+            alert(`원기둥의 부피는 ${V.toFixed(5)/*소수점 자릿수 인자*/}입니다.`);
+        } else {
+            alert("올바른 반지름과 높이를 입력해주세요.");
+        }
+        
+    </script>
+<body>
+    
+</body>
+</html>

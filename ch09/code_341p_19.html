@@ -6,7 +6,27 @@
     <title>Document</title>
 </head>
 <script>
-    
+    // 띠 배열
+const zodiacSigns = [
+  "원숭이띠", "닭띠", "개띠", "돼지띠", 
+  "쥐띠", "소띠", "범띠", "토끼띠", 
+  "용띠", "뱀띠", "말띠", "양띠"
+];
+
+// 연도를 입력받아 띠를 계산하는 함수
+function getZodiacSign(year) {
+  const remainder = year % 12; // 12로 나눈 나머지
+  return zodiacSigns[remainder]; // 나머지에 해당하는 띠 반환
+}
+
+// 테스트: 사용자 입력 받기
+const year = prompt("연도를 입력하세요:");
+if (year && !isNaN(year)) {
+  const zodiac = getZodiacSign(parseInt(year, 10));
+  alert(`${year}년은 ${zodiac}입니다.`);
+} else {
+  alert("유효한 숫자를 입력하세요!");
+}
 </script>
 <body>
     

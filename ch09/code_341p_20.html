@@ -7,6 +7,19 @@
 </head>
 <script>
     
+function printStars(lines) {
+  for (let i = 1; i <= lines; i++) { // i는 1부터 lines까지 증가
+    let stars = ""; // 별을 담을 문자열
+    for (let j = 1; j <= i; j++) { // j는 1부터 i까지 증가
+      stars += "*"; // 별 추가
+    }
+    console.log(stars); // 현재 줄 출력
+  }
+}
+
+// 출력할 줄 수를 지정하여 실행
+const lines = 10; // 출력할 줄 수
+printStars(lines);
 </script>
 <body>
     
